@@ -3,6 +3,9 @@ body{
                 border: 100px solid transparent; /* espacio para el marco */
                 border-image: url("corazones.png") 200 round; /* marco de corazones */
                 font-family: "Comic Sans MS", cursive; /* tipografía romántica */
-           
+}
+img{
+    width: 150px;
+    margin: 10px
 
 }
