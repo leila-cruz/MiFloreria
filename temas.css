@@ -1,11 +1,106 @@
 body{
-                background-color: rgb(228, 195, 200); 
-                border: 100px solid transparent; /* espacio para el marco */
-                border-image: url("corazones.png") 200 round; /* marco de corazones */
-                font-family: "Comic Sans MS", cursive; /* tipografía romántica */
+margin: 0;
+padding: 0;
+
+background-color: rgb(241, 241, 241);
+ 
+border-image: url("corazones.png") 200 round; /* marco de corazones */
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+
 }
 img{
-    width: 150px;
+    width: 400px;
     margin: 10px
+}
+.parrafos{
+    border: 100px solid transparent; /* espacio para el marco */
+    color: rgb(0, 0, 0);
+    display: flex;
+    gap: 20px;
+    font-size:20px ;
+}
+.cabecera{
+    border: 100px solid transparent; /* espacio para el marco */
 
+    background-image:url(cabecera.jpg) ;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    background-position: center;
+    padding-left:100px ;
+    padding-right:100px ;
+    border-left: 100px;    
+
+}
+h2{
+font-size: 120px;
+text-align: center;
+ background-image: url("cabecera1.jpg");
+    color: transparent;
+  -webkit-background-clip: text; /* necesario para Chrome y Safari */
+  background-clip: text;   
+  background-color: black; 
+}
+hr{
+  border: rgb(72, 22, 65);   /* quita el borde por defecto */
+  height: 20px;            /* grosor de la línea */
+  background-color: #9e3b3b; /* color */
+  padding-top: 50px;        
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    background-color: blanchedalmond;
+    background-size: cover;
+                background-position: center;
+                padding-top: 60px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 40px;
+    text-align: center;
+}
+
+.menu {
+background-color: black;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  gap: 40px;
+  margin-top: 20px;
+  margin: 20px 0;
+}
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 235, 175);
+    font-size:30px ;
+    text-align: center;
+
+}
+.menu a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+.flores{
+margin: 0;
+background-color: rgb(0, 0, 0);
+display: flex;
+width: 100%;
+justify-content: center; /* centra las imágenes */
+
+/* ancho total (n° imágenes * ancho imagen) */
+  animation: scroll 10s linear infinite;
+}
+.flores img {
+border: #9e3b3b;
+  margin-top: 40px;
+  margin: 0px;
+  width: calc(250px * 8); 
+  width: 250px;
+  border: 5px solid pink;
+  border-radius: 10px;
+}
+
+/*@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
